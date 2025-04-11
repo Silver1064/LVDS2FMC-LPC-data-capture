@@ -1,5 +1,7 @@
 # LVDS2FMC-LPC-data-capture
 
+**A novel synchronization method between high-speed ADC and cost-effective custom FPGA in an FPGA-based data acquisition system**
+
 **LVDS to FMC-LPC Synchronization Project**
 
 This project enables synchronization and data capture from LVDS signals through the FMC-LPC interface using an FPGA. It provides a reliable data path by implementing novel clock and frame alignment techniques.
@@ -48,3 +50,11 @@ simplify run the project_adc_capture.xpr
 ---
 
 If you encounter any issues or need support, feel free to open an issue or contact the maintainer.
+
+***Hanoi University of Science and Technology***
+
+***School of Mechanical Engineering***
+
+*Nguyen Thanh Dong*
+
+*Ngo Van Muoi*
