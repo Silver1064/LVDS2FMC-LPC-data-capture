@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Nov  6 20:12:20 2024
+# Process ID: 10744
+# Current directory: C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/impl_1
+# Command line: vivado.exe -log TOP_ADC_DATA_CAPTURING.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TOP_ADC_DATA_CAPTURING.tcl -notrace
+# Log file: C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/impl_1/TOP_ADC_DATA_CAPTURING.vdi
+# Journal file: C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/impl_1\vivado.jou
+# Running On: DESKTOP-KKO2LTN, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 4, Host memory: 17096 MB
+#-----------------------------------------------------------
+source TOP_ADC_DATA_CAPTURING.tcl -notrace

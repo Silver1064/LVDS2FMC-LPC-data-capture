@@ -1,0 +1,16 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 24 20:46:37 2025
+| Host         : DESKTOP-KKO2LTN running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg676-2
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ILA_ila_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ILA_ila_0_0 (xilinx.com:ip:ila:6.2) from (Rev. 12) to (Rev. 16)
+

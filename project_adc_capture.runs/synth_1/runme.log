@@ -1,0 +1,477 @@
+
+*** Running vivado
+    with args -log TOP_ADC_DATA_CAPTURING.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source TOP_ADC_DATA_CAPTURING.tcl
+
+
+
+****** Vivado v2022.1 (64-bit)
+  **** SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+  **** IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source TOP_ADC_DATA_CAPTURING.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/muoin/OneDrive - Hanoi University of Science and Technology/Desktop/DATA_processing'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-1663] Duplicate IP found for 'xilinx.com:user:ADC_DATA_CAPTURE:1.0'. The one found in IP location 'c:/Users/muoin/OneDrive - Hanoi University of Science and Technology/Desktop/DATA_processing/vivado/Final_adc_capture/Final_adc_capture.srcs' will take precedence over the same IP in location c:/Users/muoin/OneDrive - Hanoi University of Science and Technology/Desktop/DATA_processing/vivado/adc_capture_ip
+Command: synth_design -top TOP_ADC_DATA_CAPTURING -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10580
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1396.863 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TOP_ADC_DATA_CAPTURING' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:46]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'DCLK_buf' to cell 'IBUFDS' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:56]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'fCLK_buf' to cell 'IBUFDS' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:59]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'DA_0' to cell 'IBUFDS' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:64]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'DA_1' to cell 'IBUFDS' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:67]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'DB_0' to cell 'IBUFDS' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:72]
+	Parameter DIFF_TERM bound to: 1 - type: bool 
+	Parameter IBUF_LOW_PWR bound to: 1 - type: bool 
+	Parameter IOSTANDARD bound to: LVDS_25 - type: string 
+INFO: [Synth 8-113] binding component instance 'DB_1' to cell 'IBUFDS' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:75]
+INFO: [Synth 8-638] synthesizing module 'ADC_DATA_CAPTURING' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/ADC_DATA_CAPTURING.vhd:45]
+INFO: [Synth 8-113] binding component instance 'BUFG_SYNC' to cell 'BUFG' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/ADC_DATA_CAPTURING.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'BIT_CLOCK_SYNCHRONYZATION' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/BIT_CLOCK_SYNCHRONYZATION.vhd:18]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 12.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 1 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 12 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 1 - type: bool 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.000000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'MMCME2_ADV_X0Y0' to cell 'MMCME2_ADV' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/BIT_CLOCK_SYNCHRONYZATION.vhd:34]
+INFO: [Synth 8-113] binding component instance 'BUFG_CLKFB' to cell 'BUFG' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/BIT_CLOCK_SYNCHRONYZATION.vhd:133]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_DCLK' to cell 'ISERDESE2' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/BIT_CLOCK_SYNCHRONYZATION.vhd:142]
+INFO: [Synth 8-638] synthesizing module 'Phase_shift_alignment' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/Phase_shift_alignment.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'Phase_shift_alignment' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/Phase_shift_alignment.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'BIT_CLOCK_SYNCHRONYZATION' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/BIT_CLOCK_SYNCHRONYZATION.vhd:18]
+INFO: [Synth 8-113] binding component instance 'BUFG_CLK1' to cell 'BUFG' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/ADC_DATA_CAPTURING.vhd:75]
+INFO: [Synth 8-113] binding component instance 'BUFG_CLK0' to cell 'BUFG' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/ADC_DATA_CAPTURING.vhd:78]
+INFO: [Synth 8-638] synthesizing module 'FRAME_ALIGNMENT' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/FRAME_ALIGNMENT.vhd:23]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'ISERDESE2_FCLK' to cell 'ISERDESE2' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/FRAME_ALIGNMENT.vhd:29]
+INFO: [Synth 8-638] synthesizing module 'FRAME_CLOCK' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/Frame_arrange.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'FRAME_CLOCK' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/Frame_arrange.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'FRAME_ALIGNMENT' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/FRAME_ALIGNMENT.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'DATA_RECEIVE' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/DATA_RECEIVE.vhd:24]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'A0' to cell 'ISERDESE2' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/DATA_RECEIVE.vhd:31]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'A1' to cell 'ISERDESE2' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/DATA_RECEIVE.vhd:80]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'B0' to cell 'ISERDESE2' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/DATA_RECEIVE.vhd:129]
+	Parameter DATA_RATE bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 6 - type: integer 
+	Parameter DYN_CLKDIV_INV_EN bound to: FALSE - type: string 
+	Parameter DYN_CLK_INV_EN bound to: FALSE - type: string 
+	Parameter INIT_Q1 bound to: 1'b0 
+	Parameter INIT_Q2 bound to: 1'b0 
+	Parameter INIT_Q3 bound to: 1'b0 
+	Parameter INIT_Q4 bound to: 1'b0 
+	Parameter INTERFACE_TYPE bound to: NETWORKING - type: string 
+	Parameter IOBDELAY bound to: NONE - type: string 
+	Parameter NUM_CE bound to: 1 - type: integer 
+	Parameter OFB_USED bound to: FALSE - type: string 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter SRVAL_Q1 bound to: 1'b0 
+	Parameter SRVAL_Q2 bound to: 1'b0 
+	Parameter SRVAL_Q3 bound to: 1'b0 
+	Parameter SRVAL_Q4 bound to: 1'b0 
+INFO: [Synth 8-113] binding component instance 'B1' to cell 'ISERDESE2' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/DATA_RECEIVE.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'DATA_RECEIVE' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/DATA_RECEIVE.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'ILA' [c:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.gen/sources_1/bd/ILA/synth/ILA.vhd:30]
+INFO: [Synth 8-3491] module 'ILA_ila_0_0' declared at 'C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/synth_1/.Xil/Vivado-12576-DESKTOP-KKO2LTN/realtime/ILA_ila_0_0_stub.vhdl:5' bound to instance 'ila_0' of component 'ILA_ila_0_0' [c:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.gen/sources_1/bd/ILA/synth/ILA.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ILA_ila_0_0' [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/synth_1/.Xil/Vivado-12576-DESKTOP-KKO2LTN/realtime/ILA_ila_0_0_stub.vhdl:18]
+INFO: [Synth 8-256] done synthesizing module 'ILA' (0#1) [c:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.gen/sources_1/bd/ILA/synth/ILA.vhd:30]
+INFO: [Synth 8-256] done synthesizing module 'ADC_DATA_CAPTURING' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/new/ADC_DATA_CAPTURING.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'TOP_ADC_DATA_CAPTURING' (0#1) [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/sources_1/imports/new/TOP_ADC_DATA_CAPTURING.vhd:46]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1428.289 ; gain = 31.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1446.191 ; gain = 49.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1446.191 ; gain = 49.328
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1458.273 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.gen/sources_1/bd/ILA/ip/ILA_ila_0_0/ILA_ila_0_0/ILA_ila_0_0_in_context.xdc] for cell 'ADC_DATA_CAPTURING/ILA_debug/ila_0'
+Finished Parsing XDC File [c:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.gen/sources_1/bd/ILA/ip/ILA_ila_0_0/ILA_ila_0_0/ILA_ila_0_0_in_context.xdc] for cell 'ADC_DATA_CAPTURING/ILA_debug/ila_0'
+Parsing XDC File [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/constrs_1/new/ADC_DATA_CAPTURE_CONSTAIN.xdc]
+Finished Parsing XDC File [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/constrs_1/new/ADC_DATA_CAPTURE_CONSTAIN.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.srcs/constrs_1/new/ADC_DATA_CAPTURE_CONSTAIN.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TOP_ADC_DATA_CAPTURING_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TOP_ADC_DATA_CAPTURING_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/synth_1/dont_touch.xdc]
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1550.781 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ADC_DATA_CAPTURING/ILA_debug. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for ADC_DATA_CAPTURING/ILA_debug/ila_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'Phase_shift_alignment'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'FRAME_CLOCK'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 initial |                             0000 |                             0000
+          wait_iserdese2 |                             0001 |                             0001
+                  update |                             0010 |                             0010
+                  detect |                             0011 |                             0111
+                shift_up |                             0100 |                             0011
+          shift_up_check |                             0101 |                             0100
+              shift_down |                             0110 |                             0101
+        shift_down_check |                             0111 |                             0110
+              check_edge |                             1000 |                             1000
+        check_edge_shift |                             1001 |                             1001
+                    lock |                             1010 |                             1010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'Phase_shift_alignment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 initial |                              000 |                              000
+          wait_iserdese2 |                              001 |                              001
+                  update |                              010 |                              010
+                  detect |                              011 |                              011
+              align_done |                              100 |                              110
+                  action |                              101 |                              100
+         action_complete |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'FRAME_CLOCK'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input    5 Bit        Muxes := 3     
+	  11 Input    5 Bit        Muxes := 1     
+	   7 Input    5 Bit        Muxes := 1     
+	  11 Input    4 Bit        Muxes := 1     
+	   7 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	  11 Input    3 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 11    
+	   7 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:33 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |ILA_ila_0_0   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |ILA_ila_0_0_bbox |     1|
+|2     |BUFG             |     4|
+|3     |ISERDESE2        |     6|
+|4     |LUT1             |     1|
+|5     |LUT2             |     2|
+|6     |LUT3             |     3|
+|7     |LUT4             |    10|
+|8     |LUT5             |    15|
+|9     |LUT6             |    18|
+|10    |MMCME2_ADV       |     1|
+|11    |FDCE             |    32|
+|12    |FDRE             |    19|
+|13    |IBUF             |     2|
+|14    |IBUFDS           |     6|
+|15    |OBUF             |     2|
++------+-----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 1550.781 ; gain = 49.328
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1550.781 ; gain = 153.918
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1550.781 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1550.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 22b43132
+INFO: [Common 17-83] Releasing license: Synthesis
+60 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 1550.781 ; gain = 153.918
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Common 17-1381] The checkpoint 'C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/synth_1/TOP_ADC_DATA_CAPTURING.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TOP_ADC_DATA_CAPTURING_utilization_synth.rpt -pb TOP_ADC_DATA_CAPTURING_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Nov  6 20:12:11 2024...

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon Mar 24 20:47:06 2025
+# Process ID         : 15364
+# Current directory  : C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/ILA_ila_0_0_synth_1
+# Command line       : vivado.exe -log ILA_ila_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ILA_ila_0_0.tcl
+# Log file           : C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/ILA_ila_0_0_synth_1/ILA_ila_0_0.vds
+# Journal file       : C:/My Xillinx/Vivado/afe7225/project_adc_capture/project_adc_capture.runs/ILA_ila_0_0_synth_1\vivado.jou
+# Running On         : DESKTOP-KKO2LTN
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : Intel(R) Core(TM) i5-7300HQ CPU @ 2.50GHz
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 4
+# Host memory        : 17096 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19646 MB
+# Available Virtual  : 3221 MB
+#-----------------------------------------------------------
+source ILA_ila_0_0.tcl -notrace
