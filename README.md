@@ -9,11 +9,11 @@ This project enables synchronization and data capture from LVDS signals through 
 | **Design File**             | **Type** | **Description**                                                                 |
 |----------------------------|----------|---------------------------------------------------------------------------------|
 | `top_adc_data_capturing`   | VHDL     | Top-level wrapper for `adc_data_capturing`. Contains LVDS input buffers.       |
-| `adc_data_capturing`       | VHDL     | Main module integrating MMCM, clock sync, frame alignment, and data receive.   |
+| `adc_data_capturing`       | VHDL     | Main module integrating MMCM, bit_clock_synchronization, frame_alignment, and data_receive.   |
 | `bit_clock_synchronyzation`| VHDL     | Implements clock phase shift alignment.                                         |
-| `phase_shift_alignment`    | VHDL     | Submodule for phase control in bit clock synchronization.                      |
+| `phase_shift_alignment`    | VHDL     | Submodule for phase control in bit_clock_synchronization.                       |
 | `frame_alignment`          | VHDL     | Implements the frame alignment mechanism.                                       |
-| `frame_arrange`            | VHDL     | Submodule for bit slip control across ISERDES.                                  |
+| `frame_arrange`            | VHDL     | Submodule for bitslip control across ISERDES in frame_arrange.                  |
 | `data_receive`             | VHDL     | Receives and processes LVDS data.                                               |
 | `adc_data_capture_constain`| XDC      | Constraint file for clocks, timing, pinout, and I/O standards.                  |
 | `README.md`                | Markdown | Project documentation and instructions.                                         |
