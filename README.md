@@ -32,7 +32,7 @@ This project enables synchronization and data capture from LVDS signals through 
 
 - **Ubuntu:**
   ```bash
-  git clone git@github.com:Silver1064/LVDS2FMC-LPC-data-capture.git
+  git clone https://github.com/Silver1064/LVDS2FMC-LPC-data-capture.git
 - **Windows:**
   ```bash
   download zip file and extract it.
