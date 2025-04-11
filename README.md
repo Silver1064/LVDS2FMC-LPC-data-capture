@@ -2,30 +2,49 @@
 
 **LVDS to FMC-LPC Synchronization Project**
 
-This project enables synchronization and data capture from LVDS signals through the FMC-LPC interface using an FPGA. It provides a reliable data path by implementing new clock and frame alignment techniques. Below is a summary of the main design files and their functions.
+This project enables synchronization and data capture from LVDS signals through the FMC-LPC interface using an FPGA. It provides a reliable data path by implementing novel clock and frame alignment techniques.
 
 ## 📁 Design Files Overview
 
-| **Design File Name**         | **File Type** | **Description**                                                                 |
-|-----------------------------|---------------|---------------------------------------------------------------------------------|
-| `top_adc_data_capturing`    | VHDL          | Top-level wrapper for `adc_data_capturing`. Contains the buffer to receive LVDS signals. |
-| `adc_data_capturing`        | VHDL          | Main FPGA module integrating MMCM, bit clock synchronization, frame alignment, and data reception. |
-| `bit_clock_synchronyzation` | VHDL          | Implements the new clock phase shift alignment algorithm.                      |
-| `phase_shift_alignment`     | VHDL          | Submodule of `bit_clock_synchronyzation`, controlling phase shift alignment.   |
-| `frame_alignment`           | VHDL          | Implements the new frame alignment algorithm.                                  |
-| `frame_arrange`             | VHDL          | Submodule of `frame_alignment`, managing bit slip control across ISERDES.      |
-| `data_receive`              | VHDL          | Implements logic for receiving and processing LVDS data.                       |
-| `adc_data_capture_constain` | XDC           | Constraint file defining clock, timing, I/O direction, and pin standards.      |
-| `readme`                    | Text          | This file with instructions and an overview of the design.                     |
+| **Design File**             | **Type** | **Description**                                                                 |
+|----------------------------|----------|---------------------------------------------------------------------------------|
+| `top_adc_data_capturing`   | VHDL     | Top-level wrapper for `adc_data_capturing`. Contains LVDS input buffers.       |
+| `adc_data_capturing`       | VHDL     | Main module integrating MMCM, clock sync, frame alignment, and data receive.   |
+| `bit_clock_synchronyzation`| VHDL     | Implements clock phase shift alignment.                                         |
+| `phase_shift_alignment`    | VHDL     | Submodule for phase control in bit clock synchronization.                      |
+| `frame_alignment`          | VHDL     | Implements the frame alignment mechanism.                                       |
+| `frame_arrange`            | VHDL     | Submodule for bit slip control across ISERDES.                                  |
+| `data_receive`             | VHDL     | Receives and processes LVDS data.                                               |
+| `adc_data_capture_constain`| XDC      | Constraint file for clocks, timing, pinout, and I/O standards.                  |
+| `README.md`                | Markdown | Project documentation and instructions.                                         |
+
+## 🔧 Requirements
+
+- **Vivado version:** 2024.2 (recommended) with Kintex-7 device support  
+  👉 [Download Vivado](https://www.xilinx.com/support/download.html)
+
+- **Board file:** Kintex-7 xc7k325t custom board  
+  👉 [Board Files GitHub](https://github.com/rriggs/kintex-7-stlv7325t-board-files)
 
 ## 🛠 How to Build
 
-1. Open the project in Vivado.
+### 🔁 Clone the Repository
+
+- **Ubuntu:**
+  ```bash
+  git clone git@github.com:Silver1064/LVDS2FMC-LPC-data-capture.git
+- **Windows:**
+  ```bash
+  download zip file and extract it.
+
+### If you use VIVADO version 2024.2 or higher.
+simplify run the project_adc_capture.xpr
+### If you use VIVADO at older version .
+1. Open the project in Vivado, choosen the board is xc7k325t
 2. Add all source files listed above.
 3. Apply constraints from `adc_data_capture_constain.xdc`.
 4. Synthesize and implement the design.
 5. Generate bitstream and program the FPGA.
-
 ---
 
 If you encounter any issues or need support, feel free to open an issue or contact the maintainer.
