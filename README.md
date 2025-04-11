@@ -11,11 +11,11 @@ This project enables synchronization and data capture from LVDS signals through 
 | **Design File**             | **Type** | **Description**                                                                 |
 |----------------------------|----------|---------------------------------------------------------------------------------|
 | `top_adc_data_capturing`   | VHDL     | Top-level wrapper for `adc_data_capturing`. Contains LVDS input buffers.       |
-| `adc_data_capturing`       | VHDL     | Main module integrating MMCM, bit_clock_synchronization, frame_alignment, and data_receive.   |
-| `bit_clock_synchronyzation`| VHDL     | Implements clock phase shift alignment.                                         |
-| `phase_shift_alignment`    | VHDL     | Submodule for phase control in bit_clock_synchronization.                       |
+| `adc_data_capturing`       | VHDL     | Main module integrating `MMCM`, `bit_clock_synchronization`, `frame_alignment`, and `data_receive`.   |
+| `bit_clock_synchronyzation`| VHDL     | Implements new clock phase shift alignment.                                         |
+| `phase_shift_alignment`    | VHDL     | Submodule for phase shift control of `MMCM` in `bit_clock_synchronization`.                       |
 | `frame_alignment`          | VHDL     | Implements the frame alignment mechanism.                                       |
-| `frame_arrange`            | VHDL     | Submodule for bitslip control across ISERDES in frame_arrange.                  |
+| `frame_arrange`            | VHDL     | Submodule for bitslip control across `ISERDESes` in `frame_arrange`.                  |
 | `data_receive`             | VHDL     | Receives and processes LVDS data.                                               |
 | `adc_data_capture_constain`| XDC      | Constraint file for clocks, timing, pinout, and I/O standards.                  |
 | `README.md`                | Markdown | Project documentation and instructions.                                         |
@@ -40,9 +40,9 @@ This project enables synchronization and data capture from LVDS signals through 
   download zip file and extract it.
 
 ### If you use VIVADO version 2024.2 or higher.
-simplify run the project_adc_capture.xpr
+simplify run the `project_adc_capture.xpr`
 ### If you use VIVADO at older version .
-1. Open the project in Vivado, choosen the board is xc7k325t
+1. Open the project in Vivado, choosen the board is `xc7k325t`
 2. Add all source files listed above.
 3. Apply constraints from `adc_data_capture_constain.xdc`.
 4. Synthesize and implement the design.
